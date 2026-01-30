@@ -1,0 +1,69 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Player : MonoBehaviour
+{
+ 
+    public float velocita = 5f;    
+    public float forzaSalto = 10f;   
+    private Rigidbody2D rb;
+    private bool aTerra;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Update()
+    {
+        float moveInput = 0f;
+
+        // Controllo solo con le frecce
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            moveInput = -1f;
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            moveInput = 1f;
+        }
+
+        rb.linearVelocity = new Vector2(moveInput * velocita, rb.linearVelocity.y);
+
+        // Salto con Space
+        if (Input.GetKeyDown(KeyCode.Space) && aTerra)
+        {
+            rb.AddForce(new Vector2(0, forzaSalto), ForceMode2D.Impulse);
+        }
+    }
+
+    // Verifica se il player � a terra
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Terreno"))
+        {
+            aTerra = true;
+        }
+        if (collision.gameObject.CompareTag("Livello1"))
+        {
+            SceneManager.LoadScene("Level_1");
+        }
+        if (collision.gameObject.CompareTag("Livello2"))
+        {
+            SceneManager.LoadScene("Level_2");
+        }
+        if (collision.gameObject.CompareTag("Livello3"))
+        {
+            SceneManager.LoadScene("Level_3");
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Terreno"))
+        {
+            aTerra = false;
+        }
+    }
+  
+}
