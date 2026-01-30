@@ -16,19 +16,19 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        float moveInput = 0f;
+        float movimento = 0f;
 
         // Controllo solo con le frecce
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            moveInput = -1f;
+            movimento = -1f;
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            moveInput = 1f;
+            movimento = 1f;
         }
 
-        rb.linearVelocity = new Vector2(moveInput * velocita, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(movimento * velocita, rb.linearVelocity.y);
 
         // Salto con Space
         if (Input.GetKeyDown(KeyCode.Space) && aTerra)
