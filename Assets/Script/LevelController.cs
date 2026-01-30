@@ -1,16 +1,8 @@
 using UnityEngine;
 
-public class LevelController : MonoBehaviour
+public class LevelController : MonoSingleton<LevelController>
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool Level_1;
+    public bool Level_2;
+    public bool Level_3;
 }

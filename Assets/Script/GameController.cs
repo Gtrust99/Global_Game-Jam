@@ -1,16 +1,14 @@
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class GameController : MonoSingleton<GameController>
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject Hub;
 
-    // Update is called once per frame
-    void Update()
+
+    public void StartGame()
     {
-        
+        Hub.SetActive(true);
+
+
     }
 }

@@ -295,6 +295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 96903054}
+  - component: {fileID: 96903055}
   m_Layer: 0
   m_Name: UIController
   m_TagString: Untagged
@@ -318,6 +319,18 @@ Transform:
   - {fileID: 540503378}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &96903055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96903053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e177f6c6187a14f4cbcc9a872bb3e627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &261959075
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +378,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d150b08541924429e0c1dab0275984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Level_1: 0
+  Level_2: 0
+  Level_3: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +764,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 586568050}
+  - component: {fileID: 586568051}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -770,6 +787,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &586568051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586568049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9704bc258a54748a13a579be45da74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hub: {fileID: 1841849105}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1301,7 @@ GameObject:
   - component: {fileID: 1462142978}
   - component: {fileID: 1462142977}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1827,7 +1857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Title
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
