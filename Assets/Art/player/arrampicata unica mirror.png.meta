@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: a5322cae1e450a047bb1c42f1a5b9b1a
+guid: afe99aeeed3083244a2200ace508bf92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6923188316897733977
-    second: salto_0
+      213: 101853606281504556
+    second: arrampicata unica mirror_0
   - first:
-      213: 5104642928478132615
-    second: salto_1
+      213: -6656365906144694026
+    second: arrampicata unica mirror_1
   - first:
-      213: -5006346630430571533
-    second: salto_2
+      213: 4301535198421795318
+    second: arrampicata unica mirror_2
   - first:
-      213: -7582253496403596742
-    second: salto_3
+      213: 4752023768783836853
+    second: arrampicata unica mirror_3
   - first:
-      213: 6712224338716393019
-    second: salto_4
+      213: -6544743276949817028
+    second: arrampicata unica mirror_4
   - first:
-      213: 2660766232509888113
-    second: salto_5
+      213: -1718153152296593761
+    second: arrampicata unica mirror_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: salto_0
+      name: arrampicata unica mirror_0
       rect:
         serializedVersion: 2
-        x: 375
-        y: 1962
-        width: 3752
-        height: 6096
+        x: 2323
+        y: 2347
+        width: 2757
+        height: 4456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95de2d5f71b141060800000000000000
-      internalID: 6923188316897733977
+      spriteID: c276085b05bd96100800000000000000
+      internalID: 101853606281504556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: salto_1
+      name: arrampicata unica mirror_1
       rect:
         serializedVersion: 2
-        x: 4464
-        y: 2173
-        width: 3752
-        height: 5814
+        x: 5078
+        y: 2347
+        width: 2757
+        height: 4456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7891629a2b557d640800000000000000
-      internalID: 5104642928478132615
+      spriteID: 6f0793da976df93a0800000000000000
+      internalID: -6656365906144694026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: salto_2
+      name: arrampicata unica mirror_2
       rect:
         serializedVersion: 2
-        x: 8428
-        y: 2173
-        width: 3752
-        height: 5877
+        x: 8071
+        y: 2428
+        width: 2717
+        height: 4391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f346bea342e58ab0800000000000000
-      internalID: -5006346630430571533
+      spriteID: 6f145c2f87f12bb30800000000000000
+      internalID: 4301535198421795318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: salto_3
+      name: arrampicata unica mirror_3
       rect:
         serializedVersion: 2
-        x: 12392
-        y: 2173
-        width: 3752
-        height: 5877
+        x: 10915
+        y: 2417
+        width: 2717
+        height: 4391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3a66e51e9c66c690800000000000000
-      internalID: -7582253496403596742
+      spriteID: 5b6d29eb07492f140800000000000000
+      internalID: 4752023768783836853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: salto_4
+      name: arrampicata unica mirror_4
       rect:
         serializedVersion: 2
-        x: 16142
-        y: 2200
-        width: 3752
-        height: 6066
+        x: 13984
+        y: 2417
+        width: 2717
+        height: 4391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3efbe1297c962d50800000000000000
-      internalID: 6712224338716393019
+      spriteID: c39b7474aa66c25a0800000000000000
+      internalID: -6544743276949817028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: salto_5
+      name: arrampicata unica mirror_5
       rect:
         serializedVersion: 2
-        x: 18140
-        y: 1733
-        width: 131
-        height: 254
+        x: 17054
+        y: 2347
+        width: 2717
+        height: 4391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1763b178ac0fce420800000000000000
-      internalID: 2660766232509888113
+      spriteID: f96d4a7afc4e728e0800000000000000
+      internalID: -1718153152296593761
       vertices: []
       indices: 
       edges: []
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      salto_0: 6923188316897733977
-      salto_1: 5104642928478132615
-      salto_2: -5006346630430571533
-      salto_3: -7582253496403596742
-      salto_4: 6712224338716393019
-      salto_5: 2660766232509888113
+      arrampicata unica mirror_0: 101853606281504556
+      arrampicata unica mirror_1: -6656365906144694026
+      arrampicata unica mirror_2: 4301535198421795318
+      arrampicata unica mirror_3: 4752023768783836853
+      arrampicata unica mirror_4: -6544743276949817028
+      arrampicata unica mirror_5: -1718153152296593761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
