@@ -8,8 +8,6 @@ public class AnimatorController : MonoSingleton<AnimatorController>
     {
 
 
-        // Per impostare un int
-        
         if(directions==-1)
         {
             animator.SetInteger("Direction", -1);
