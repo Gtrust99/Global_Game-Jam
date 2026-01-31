@@ -10,7 +10,6 @@ public class AnimatorController : MonoSingleton<AnimatorController>
     {
 
 
-  
         if(directions==-1)
         {
             animator.SetInteger("Direction", -1);
@@ -22,11 +21,16 @@ public class AnimatorController : MonoSingleton<AnimatorController>
             animator.SetInteger("Direction", 1);
       
         }
-        if (directions == 0)
-        {
-            animator.SetInteger("Direction", 0);
 
-        }
+        //if (directions == -2)
+        //{
+        //    animator.SetInteger("Direction", -2);
+        //}
+
+        //if (directions == 2)
+        //{
+        //    animator.SetInteger("Direction", 2);
+        //}
 
         //if (directions == -2)
         //{
