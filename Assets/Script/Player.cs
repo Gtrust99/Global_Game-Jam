@@ -34,27 +34,27 @@ public class Player : MonoBehaviour
             assex = 1f;
           
         }
-        //if (Input.GetKey(KeyCode.UpArrow) && Mask_1)
-        //{
+        if (Input.GetKey(KeyCode.UpArrow) && MaskController.Instance.Skill2)
+        {
 
-        //    rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-        //    rb.linearVelocity = new Vector2(rb.linearVelocity.x, 1);
-        //}
-        //if (Input.GetKey(KeyCode.DownArrow && &&MaskController.Instance.Mask_3 ))
-        //{
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 1);
+        }
+        if (Input.GetKey(KeyCode.DownArrow) &&  MaskController.Instance.Skill2)
+        {
 
-        //    rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-        //    rb.linearVelocity = new Vector2(rb.linearVelocity.x, -1);
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -1);
 
-        //}
+        }
         rb.linearVelocity = new Vector2(assex * velocita, rb.linearVelocity.y);
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && aTerra)  //&&MaskController.Instance.Mask_1 )
+        if (Input.GetKeyDown(KeyCode.Space) && aTerra  && MaskController.Instance.Skill1 )
         {
             rb.AddForce(new Vector2(0, forzaSalto), ForceMode2D.Impulse);
         }
-        Debug.Log(arrampico);
+
     }
 
 
@@ -64,18 +64,11 @@ public class Player : MonoBehaviour
         {
             aTerra = true;
         }
-        if (collision.gameObject.CompareTag("Livello1"))
+        if (collision.gameObject.CompareTag("Mask2") || collision.gameObject.CompareTag("Mask3"))
         {
-            transform.position = LevelController.Instance.Lv1.transform.position;
+            transform.position = LevelController.Instance.Teleport.transform.position;
         }
-        if (collision.gameObject.CompareTag("Livello2"))
-        {
-            transform.position = LevelController.Instance.Lv2.transform.position;
-        }
-        if (collision.gameObject.CompareTag("Livello3"))
-        {
-            transform.position = LevelController.Instance.Lv3.transform.position;
-        }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
