@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections;
+
 public class MaskController : MonoSingleton<MaskController>
 {
     public bool Mask_1;
