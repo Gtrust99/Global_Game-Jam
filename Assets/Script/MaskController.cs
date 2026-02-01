@@ -16,7 +16,7 @@ public class MaskController : MonoSingleton<MaskController>
     {
         if ( Input.GetKeyDown(KeyCode.A) && UnlockMask_1) //PickMask1
         {
-            Mask_1 = false;
+            Mask_1 = true;
             Mask_2 = false;
             Mask_3 = false;
         }
@@ -40,11 +40,11 @@ public class MaskController : MonoSingleton<MaskController>
             Skill2 = false;
             Skill3 = false;
         }
-        //if (!Mask_1)
-        //{
-        //    PlayerUI.Instance.Mask1_unselected();
-        //    Skill1 = false;
-        //}
+        if (!Mask_1)
+        {
+            PlayerUI.Instance.Mask1_unselected();
+            Skill1 = false;
+        }
         if (Mask_2)
         {
             PlayerUI.Instance.Mask2_selected();
@@ -52,11 +52,11 @@ public class MaskController : MonoSingleton<MaskController>
             Skill2 = true;
             Skill3 = false;
         }
-        //if (!Mask_2)
-        //{
-        //    PlayerUI.Instance.Mask2_unselected();
-        //    Skill2 = false;
-        //}
+        if (!Mask_2)
+        {
+            PlayerUI.Instance.Mask2_unselected();
+            Skill2 = false;
+        }
         if (Mask_3)
         {
             PlayerUI.Instance.Mask3_selected();
@@ -71,7 +71,7 @@ public class MaskController : MonoSingleton<MaskController>
         //}
         if(Skill1)
         {
-            LevelController.Instance.Lv1.SetActive(false);
+            LevelController.Instance.Lv1.SetActive(true);
             LevelController.Instance.Lv2.SetActive(false);
             LevelController.Instance.Lv3.SetActive(false);
         }

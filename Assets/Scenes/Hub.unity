@@ -5022,7 +5022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 450225092}
   smoothing: 0.125
-  offset: {x: 0, y: 3.18}
+  offset: {x: 0, y: 3.18, z: 0}
 --- !u!1 &524328231
 GameObject:
   m_ObjectHideFlags: 0
@@ -5709,7 +5709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &551751759
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9446,6 +9446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 862060396}
+  - component: {fileID: 862060397}
   m_Layer: 0
   m_Name: PlayerUI
   m_TagString: Untagged
@@ -9474,6 +9475,24 @@ Transform:
   - {fileID: 1504583970}
   m_Father: {fileID: 540503378}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &862060397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862060395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cce67a6714c84143aa591bddbd42dfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mask1_on: {fileID: 300401095}
+  Mask1_off: {fileID: 1922115556}
+  Mask2_on: {fileID: 14857767}
+  Mask2_off: {fileID: 551751758}
+  Mask3_on: {fileID: 1132014949}
+  Mask3_off: {fileID: 1504583969}
 --- !u!1 &870447797
 GameObject:
   m_ObjectHideFlags: 0
@@ -9549,7 +9568,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 2725151274357256878, guid: 5a362df7f40d3454489f2ae8f1cab89e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15678,7 +15697,7 @@ GameObject:
   - component: {fileID: 1283860797}
   m_Layer: 0
   m_Name: trerreno_grigio_0
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17977,7 +17996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1504583970
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18051,7 +18070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1506515204
 Transform:
   m_ObjectHideFlags: 0
@@ -20894,7 +20913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1676215254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25793,7 +25812,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1922115557
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27257,7 +27276,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -6943526552950492337, guid: 5962b24dd605191439bb19e9bb549f1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -28075,7 +28094,7 @@ GameObject:
   - component: {fileID: 2145900403}
   m_Layer: 0
   m_Name: maschera cinfhiale_0
-  m_TagString: Untagged
+  m_TagString: Mask3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
