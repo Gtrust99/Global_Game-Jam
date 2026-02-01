@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
         {
             arrampico = true;
             transform.position = other.transform.position;
-
+            rb.gravityScale = 0.5f;
         }
     }
 
@@ -94,7 +94,8 @@ public class Player : MonoBehaviour
         if (other.CompareTag("Arrampicabile"))
         {
             arrampico = false;
-          
+            rb.gravityScale = 1f;
+
         }
     }
 }
