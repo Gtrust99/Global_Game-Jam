@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f58607d7973bb524ea8847af20358f70
+guid: e09a43ecd2e0e644b8dbb9bfa6946eea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 199655554457151452
-    second: mensola grande_0
+      213: -7997273460058036149
+    second: ui_cinhiale_cuoreVuoto_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mensola grande_0
+      name: ui_cinhiale_cuoreVuoto_0
       rect:
         serializedVersion: 2
-        x: 69
-        y: 279
-        width: 442
-        height: 92
+        x: 9
+        y: 29
+        width: 622
+        height: 582
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd72ad04ba155c200800000000000000
-      internalID: 199655554457151452
+      spriteID: b48e491d82af30190800000000000000
+      internalID: -7997273460058036149
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mensola grande_0: 199655554457151452
+      ui_cinhiale_cuoreVuoto_0: -7997273460058036149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

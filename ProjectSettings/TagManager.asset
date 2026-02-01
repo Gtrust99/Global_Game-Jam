@@ -10,6 +10,9 @@ TagManager:
   - Livello2
   - Livello3
   - Arrampicabile
+  - Mask2
+  - Mask3
+  - Death
   layers:
   - Default
   - TransparentFX

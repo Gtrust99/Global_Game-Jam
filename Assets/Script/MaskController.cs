@@ -1,42 +1,91 @@
 using UnityEngine;
 
-public class MaskController : MonoSingleton<LevelController>
+public class MaskController : MonoSingleton<MaskController>
 {
     public bool Mask_1;
     public bool Mask_2;
     public bool Mask_3;
-    //public GameObject Mask1;
-    //public GameObject Mask2;
-    //public GameObject Mask3;
+    public bool UnlockMask_1;
+    public bool UnlockMask_2;
+    public bool UnlockMask_3;
+    public bool Skill1;
+    public bool Skill2;
+    public bool Skill3;
     // Update is called once per frame
     void Update()
     {
-        if (LevelController.Instance.Level_1 && Input.GetKeyDown(KeyCode.A)) //PickMask1
+        if ( Input.GetKeyDown(KeyCode.A) && UnlockMask_1) //PickMask1
         {
-            Mask_1 = !Mask_1;
+            Mask_1 = false;
+            Mask_2 = false;
+            Mask_3 = false;
         }
-        if (LevelController.Instance.Level_2 && Input.GetKeyDown(KeyCode.S)) //PickMask2
+        if ( Input.GetKeyDown(KeyCode.S) && UnlockMask_2) //PickMask2
         {
-            Mask_2 = !Mask_2;
+            Mask_1 = false;
+            Mask_2 = true;
+            Mask_3 = false;
         }
-        if (LevelController.Instance.Level_3 && Input.GetKeyDown(KeyCode.D)) //PickMask3
+        if ( Input.GetKeyDown(KeyCode.D) && UnlockMask_3) //PickMask3
         {
-            Mask_3 = !Mask_3;
+            Mask_1 = false;
+            Mask_2 = false;
+            Mask_3 = true;
         }
-        if (Mask_1)
+        if(Mask_1)
         {
-            
-            //GameObject.SetActive(true);
+            PlayerUI.Instance.Mask1_selected();
+
+            Skill1 =true;
+            Skill2 = false;
+            Skill3 = false;
         }
+        //if (!Mask_1)
+        //{
+        //    PlayerUI.Instance.Mask1_unselected();
+        //    Skill1 = false;
+        //}
         if (Mask_2)
         {
-            //GameObject.SetActive(true);
+            PlayerUI.Instance.Mask2_selected();
+            Skill1 = false;
+            Skill2 = true;
+            Skill3 = false;
         }
+        //if (!Mask_2)
+        //{
+        //    PlayerUI.Instance.Mask2_unselected();
+        //    Skill2 = false;
+        //}
         if (Mask_3)
         {
-            //GameObject.SetActive(true);
+            PlayerUI.Instance.Mask3_selected();
+            Skill1 = false;
+            Skill2 = false;
+            Skill3 = true;
         }
-
-
+        //if (!Mask_3)
+        //{
+        //    PlayerUI.Instance.Mask3_unselected();
+        //    Skill3 = false;
+        //}
+        if(Skill1)
+        {
+            LevelController.Instance.Lv1.SetActive(false);
+            LevelController.Instance.Lv2.SetActive(false);
+            LevelController.Instance.Lv3.SetActive(false);
+        }
+        if (Skill2)
+        {
+            LevelController.Instance.Lv1.SetActive(false);
+            LevelController.Instance.Lv2.SetActive(true);
+            LevelController.Instance.Lv3.SetActive(false);
+        }
+        if (Skill3)
+        {
+            LevelController.Instance.Lv1.SetActive(false);
+            LevelController.Instance.Lv2.SetActive(false);
+            LevelController.Instance.Lv3.SetActive(true);
+        }
     }
 }

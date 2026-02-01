@@ -1,14 +1,25 @@
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CameraFollow : MonoSingleton<CameraFollow>
 {
+    public Transform target; 
+    public float smoothing = 0.125f; 
+    public Vector2 offset; 
 
-        public Transform Player; 
-        public Vector3 offset; 
-
-        void LateUpdate()
+    void LateUpdate()
+    {
+        if(!MaskController.Instance.UnlockMask_2)
         {
-            transform.position = Player.position + offset;
+            Vector2 desiredPosition = new Vector3(target.position.x + offset.x, transform.position.y, transform.position.z);
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothing);
+            transform.position = smoothedPosition;
         }
-    
+        else
+        {
+            Vector2 desiredPosition = new Vector3(target.position.x , transform.position.y + offset.y, transform.position.z);
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothing);
+            transform.position = smoothedPosition;
+        }
+       
+    }
 }

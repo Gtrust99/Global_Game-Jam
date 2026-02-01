@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f58607d7973bb524ea8847af20358f70
+guid: 5a362df7f40d3454489f2ae8f1cab89e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 199655554457151452
-    second: mensola grande_0
+      213: 2725151274357256878
+    second: ALBER_viola_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mensola grande_0
+      name: ALBER_viola_0
       rect:
         serializedVersion: 2
-        x: 69
-        y: 279
-        width: 442
-        height: 92
+        x: 0
+        y: 0
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd72ad04ba155c200800000000000000
-      internalID: 199655554457151452
+      spriteID: ea2744345aea1d520800000000000000
+      internalID: 2725151274357256878
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mensola grande_0: 199655554457151452
+      ALBER_viola_0: 2725151274357256878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
