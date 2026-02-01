@@ -6,6 +6,7 @@ public class Mask_2 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            MaskController.Instance.Mask_2 = true;
             MaskController.Instance.UnlockMask_2 = true;
             gameObject.SetActive(false);
         }

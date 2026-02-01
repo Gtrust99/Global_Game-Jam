@@ -37,14 +37,9 @@ public class AnimatorController : MonoSingleton<AnimatorController>
         //    animator.SetInteger("Direction", 2);
         //}
 
-        //if (directions == -2)
+        //if (directions == 3)
         //{
-        //    animator.SetInteger("Direction", -2);
-        //}
-
-        //if (directions == 2)
-        //{
-        //    animator.SetInteger("Direction", 2);
+        //    animator.SetInteger("Direction", 3);
         //}
 
     }
