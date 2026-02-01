@@ -8,7 +8,7 @@ public class PlayerUI : MonoSingleton<PlayerUI>
     public GameObject Mask2_off;
     public GameObject Mask3_on;
     public GameObject Mask3_off;
-    
+    public GameObject Dialogo1;
 
     public  void Mask1_selected()
     {
@@ -69,5 +69,13 @@ public class PlayerUI : MonoSingleton<PlayerUI>
         Mask3_off.SetActive(true);
     }
 
+    void Update()
+    {
+        if(MaskController.Instance.UnlockMask_2)
+        {
+            Dialogo1.SetActive(true);
+
+        }
+    }
 
 }
