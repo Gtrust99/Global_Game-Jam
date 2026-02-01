@@ -21,6 +21,11 @@ public class AnimatorController : MonoSingleton<AnimatorController>
             animator.SetInteger("Direction", 1);
       
         }
+        if (directions == 0)
+        {
+            animator.SetInteger("Direction", 0);
+
+        }
 
         //if (directions == -2)
         //{
