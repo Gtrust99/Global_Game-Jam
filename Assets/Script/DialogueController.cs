@@ -3,15 +3,24 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class DialogueController : MonoBehaviour
 {
-    public TextMeshProUGUI testo1;
-    public TextMeshProUGUI testo2;
+    public GameObject testo1;
+    public GameObject testo2;
     public GameObject Avanti;
-    public GameObject Start;
+    public GameObject Gioco;
+    void Start()
+    {
+        Avanti.SetActive(true);
+        Gioco.SetActive(false);
+        testo1.SetActive(true);
+        testo2.SetActive(false);
+    }
     public void CambiaTesto()
     {
-        testo1 = testo2;
+        
         Avanti.SetActive(false);
-        Start.SetActive(true);
+        Gioco.SetActive(true);
+        testo1.SetActive(false);
+        testo2.SetActive(true);
     }
     public void CominciaGioco()
     {

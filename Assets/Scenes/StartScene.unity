@@ -476,7 +476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &398358866
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1177,10 +1177,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0575bca16ce0041a29261bdd7f3ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testo1: {fileID: 0}
-  testo2: {fileID: 0}
-  Avanti: {fileID: 0}
-  Start: {fileID: 0}
+  testo1: {fileID: 398358865}
+  testo2: {fileID: 1746735787}
+  Avanti: {fileID: 2054603247}
+  Gioco: {fileID: 776610499}
 --- !u!4 &1586623674
 Transform:
   m_ObjectHideFlags: 0
