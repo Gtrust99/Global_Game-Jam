@@ -8,9 +8,9 @@ public class PlayerUI : MonoSingleton<PlayerUI>
     public GameObject Mask2_off;
     public GameObject Mask3_on;
     public GameObject Mask3_off;
+    
 
-
-    public void Mask1_selected()
+    public  void Mask1_selected()
     {
         Mask1_on.SetActive(true);
         Mask1_off.SetActive(false);
@@ -69,8 +69,5 @@ public class PlayerUI : MonoSingleton<PlayerUI>
         Mask3_off.SetActive(true);
     }
 
-    public void Update ()
-        {
 
-        }
 }

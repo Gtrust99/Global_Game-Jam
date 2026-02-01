@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
         rb.linearVelocity = new Vector2(assex * velocita, rb.linearVelocity.y);
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && aTerra  && MaskController.Instance.Skill1 )
+        if (Input.GetKeyDown(KeyCode.Space) && aTerra  && MaskController.Instance.Mask_1 )
         {
             rb.AddForce(new Vector2(0, forzaSalto), ForceMode2D.Impulse);
         }
