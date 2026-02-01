@@ -69,5 +69,8 @@ public class PlayerUI : MonoSingleton<PlayerUI>
         Mask3_off.SetActive(true);
     }
 
+    public void Update ()
+        {
 
+        }
 }
